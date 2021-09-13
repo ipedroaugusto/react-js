@@ -17,12 +17,13 @@ export function RepositoryList() {
 
     return (
         <section className="repository-list">
-            <h1>Lista de repositórios</h1>
+            <h1>Lista de repositórios</h1> 
 
-            <ul>
-                {repositories.map(repository => {  //percorre o repositories e retorna um repository ntem para cada repository
-                    return <RepositoryItem repository={repository} />
-                })}
+            <ul> 
+              {repositories.map(repository => {
+                  return <RepositoryItem repository={repository} />
+              }
+                )}
             </ul>
         </section>
     );
